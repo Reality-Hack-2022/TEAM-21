@@ -3,7 +3,7 @@
     "document_id": "3ENI4HUred06t5ugXqTp",
     "original_document_id": "6WHK6KCFxI_4a8DHQ7Zx",
     "version": "29",
-    "lastChanged": "1648241990332",
+    "lastChanged": "1648243859728",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -692,7 +692,6 @@
                     "1570568858068010:1331786",
                     "1570568871411558:1337674",
                     "1570568884564877:1343562",
-                    "1648222436911079:61453",
                     "1648222436913503:61471"
                 ]
             ],
@@ -3249,7 +3248,7 @@
                     },
                     {
                         "k": "26341",
-                        "v": "62504c6317be12b813bf758ab74ef804"
+                        "v": "4b0811bb0559bae5cff933b00c2c7556"
                     },
                     {
                         "k": "28681",
@@ -3305,7 +3304,7 @@
                         "isFolder": "true",
                         "lastModified": "2022-03-25T11:37:57",
                         "name": "Public",
-                        "hash": "0ed8c8624aa9a698131568d54422ff1f",
+                        "hash": "f1630f3584b9dc899618813865b349e6",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -3461,15 +3460,15 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-03-25T16:54:27",
+                                "lastModified": "2022-03-25T17:28:53",
                                 "name": "Materials",
-                                "hash": "d964ec8212305dfa0569faf3a30ce93b",
+                                "hash": "eafb37e89c02668c005c80677fc617f3",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-03-25T16:54:27",
+                                        "lastModified": "2022-03-25T17:28:53",
                                         "name": "draw_path_material [DUPLICATE_ME].lsmat",
-                                        "hash": "f8aa3971fa8be6be86236c7f78d67333",
+                                        "hash": "64b1fafbd919b29fda2e1265e9c2ed62",
                                         "children": ""
                                     },
                                     {
@@ -6228,17 +6227,7 @@
             }
         },
         "InspectorController": {
-            "selection": {
-                "resources": [
-                    {
-                        "uid": "1648160208904286:1333756",
-                        "path_list": [
-                            "Scripts",
-                            "UserPathCreator"
-                        ]
-                    }
-                ]
-            }
+            "selection": ""
         },
         "EffectsController": {
             "1": "",
