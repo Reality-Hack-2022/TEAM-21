@@ -24,6 +24,18 @@
 // @input Component.ScriptComponent placeObjectsOnPath
 //@ui {"widget":"group_end"}
 
+// @input Component.AudioComponent voAudio
+// @input Asset.AudioTrackAsset voYoga
+// @input Asset.AudioTrackAsset voStrength
+// @input Asset.AudioTrackAsset voSquats
+// @input Asset.AudioTrackAsset voSprint
+// @input Asset.AudioTrackAsset voRunning
+// @input Asset.AudioTrackAsset voIntro
+
+// @input SceneObject workoutMetrics
+// @input SceneObject squatMetricText
+// @input SceneObject jumpMetricText
+
 global.appController = script;
 
 script.menuOpen = true;
@@ -34,8 +46,12 @@ script.newPathMode = false;
 script.createEvent("OnStartEvent").bind(function()
 {
     global.planeTracker.start();
+    
     script.audio.audioTrack = script.startupSound;
     script.audio.play(0);
+    
+    script.voAudio.audioTrack = script.voIntro;
+    script.voAudio.play(0);
 });
 
 
@@ -107,6 +123,8 @@ script.exitCurrent = function()
     script.audio.play(0);
     
     script.stopRunningExperience();
+    global.squatJumps.endGame();
+    script.workoutMetrics.enabled = false;
 }
 
 script.setHighlighted = function(index)
@@ -128,13 +146,13 @@ script.setHighlighted = function(index)
                 script.menuLabel.text = "Squats";
                 break;
             case 3:
-                script.menuLabel.text = "Comming Soon: Yoga";
+                script.menuLabel.text = "Coming Soon: Yoga";
                 break;
             case 4:
-                script.menuLabel.text = "Comming Soon: Weights";
+                script.menuLabel.text = "Coming Soon: Weights";
                 break;
             case 5:
-                script.menuLabel.text = "Comming Soon: Sprints";
+                script.menuLabel.text = "Coming Soon: Sprints";
                 break;
             case 6:
                 script.menuLabel.text = "Set new path";
@@ -155,22 +173,40 @@ script.selectMenuItem = function()
     {
         case 0:
             print("selected Jump");
+            script.jumpMetricText.enabled = true;
+            script.squatMetricText.enabled = false;
+            script.workoutMetrics.enabled = true;
+            script.startSquats();
             break;
         case 1:
             print("selected Run");
             script.startRunningExperience();
+    script.voAudio.audioTrack = script.voRunning;
+    script.voAudio.play(0);
             break;
         case 2:
             print("selected Squat");
+            script.jumpMetricText.enabled = false;
+            script.squatMetricText.enabled = true;
+            script.workoutMetrics.enabled = true;
+            script.startSquats();
+    script.voAudio.audioTrack = script.voSquats;
+    script.voAudio.play(0);
             break;
         case 3:
             print("selected Yoga");
+    script.voAudio.audioTrack = script.voYoga;
+    script.voAudio.play(0);
             break;
         case 4:
             print("selected Weights");
+    script.voAudio.audioTrack = script.voStrength;
+    script.voAudio.play(0);
             break;
         case 5:
             print("selected Sprint");
+    script.voAudio.audioTrack = script.voSprint;
+    script.voAudio.play(0);
             break;
         case 6:
             script.createNewRunningPath();
@@ -185,6 +221,14 @@ script.hideMenu = function()
 }
 
 
+script.startSquats = function()
+{
+    global.squatJumps.startExercise();
+}
+script.endSquats = function()
+{
+    global.squatJumps.endGame();
+}
 script.createNewRunningPath = function()
 {
     //script.userPathCreator.enabled = true;

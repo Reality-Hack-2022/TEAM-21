@@ -7,6 +7,11 @@
 // - Tap to set object position
 // Ted Brown / November 30, 2021
 
+global.squatJumps = script;
+
+// @input Component.AudioComponent audio
+// @input Asset.AudioTrackAsset successSound
+
 // @input SceneObject cameraObject
 // @input SceneObject targetObject
 // @input Component.Text currentHeight
@@ -69,7 +74,8 @@ function resetGame() {
     updateScoreText();
 }
 
-function endGame() {
+script.endGame = function() 
+{
     setHighScore();
     resetGame();
 }
@@ -99,6 +105,10 @@ script.createEvent("UpdateEvent").bind(function () {
         if(last_exercise != "Squat")
         {
             squatCounter++;
+
+            script.audio.audioTrack = script.successSound;
+            script.audio.play(0);                
+                
             print("squatCounter: " + squatCounter);
             currentScore = squatCounter;
             updateScoreText();
@@ -112,6 +122,8 @@ script.createEvent("UpdateEvent").bind(function () {
         if(last_exercise != "Jump")
         {
             jumpCounter++;
+            script.audio.audioTrack = script.successSound;
+            script.audio.play(0);          
             script.jumpCounter.text = jumpCounter + "Jumps";
             print("jumpCounter: " + jumpCounter);
         }
@@ -140,16 +152,17 @@ script.createEvent("UpdateEvent").bind(function () {
     }
 });
 
-script.createEvent("TapEvent").bind(function () {
+script.startExercise = function () {
     if (global.planeTracker.isValidSurface === true) {
-        if (global.planeTracker.surface === global.planeTracker.surfaceType.floor) {
-            global.planeTracker.stop();    
+        if (global.planeTracker.surface === global.planeTracker.surfaceType.floor)
+        { 
             script.foundFloor = true;
             script.floorPosition = global.planeTracker.position;
             camHeight = cam.y;
             startHeight = cam.y;
+            global.planeTracker.stop();   
             return;
         }
     }
-});
+};
 
