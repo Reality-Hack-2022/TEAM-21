@@ -7,6 +7,8 @@
 //               print("Carousel's current index set to " + index)
 //           }
 
+global.carousel = script;
+
 //@input SceneObject iconsRoot
 //@input Component.Script apiProvider
 //@input Component.Camera camera
@@ -110,7 +112,7 @@ Carousel.prototype.updateInitPosition = function (pos) {
 // Build carousel
 var carousel = new Carousel();
 carousel.build();
-carousel.setIndex(0);
+carousel.setIndex(1);
 
 
 // Setup Touch gestures
