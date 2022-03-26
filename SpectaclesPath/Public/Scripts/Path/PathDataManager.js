@@ -5,7 +5,7 @@
 // Description: The primary script that gets the camera path data from device tracking component.
 // This script also adds helper functions to global.pathDataManager to help with accessing path data.
 
-global.pathDataManager = script;
+global.globalPathDataManager = script;
 
 // @input string ifStatic = "virtualPath" {"label":"On Static Video", "widget":"combobox", "values":[{"label":"Create Virtual Path", "value":"virtualPath"}, {"label":"Do Nothing", "value":"nothing"}]}
 // @input bool checkForStoredPathData
@@ -24,12 +24,18 @@ var getPathFromCamera = getRawPathDataFromCamera();
 script.activate = function() {
     if (script.checkForStoredPathData)
     {
-        pathData = global.userPathCreator.api.retrieveEncapsulatedData();
+        pathData = global.userPathCreator.retrieveEncapsulatedData();
     }
     else if (checkInputValues())
     {
         pathData = getPathFromCamera();
     }
+}
+
+script.loadCachedPath = function()
+{
+    pathData = global.userPathCreator.retrieveEncapsulatedData();
+    print("Loading pathData of length: "+ pathData.length);
 }
 
 function onUpdate() {
@@ -58,6 +64,7 @@ function createPathData(option) {
     if (!isCameraPathMoving(leastCameraMove) && script.ifStatic == "virtualPath") {
         // If camera is not moving beyond the border
         customPath = createPathBasedOnCamera();
+        print("Loading custom Path based on camera");
         return customPath;
     }
 

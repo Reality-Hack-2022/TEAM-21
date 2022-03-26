@@ -3,7 +3,7 @@
     "document_id": "OLO5v3CXUHCWJA6oKva3",
     "original_document_id": "6WHK6KCFxI_4a8DHQ7Zx",
     "version": "29",
-    "lastChanged": "1648308340852",
+    "lastChanged": "1648317701230",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -95,29 +95,61 @@
                         "3D_Carousel"
                     ],
                     [
-                        "Audio"
+                        "Audio",
+                        "SFX"
                     ],
                     [
                         "Audio",
+                        "SFX",
                         "ReturnSound"
                     ],
                     [
                         "Audio",
+                        "SFX",
                         "SFX_Swipe"
                     ],
                     [
                         "Audio",
+                        "SFX",
                         "SelectMode"
                     ],
                     [
                         "Audio",
+                        "SFX",
                         "StartupSound"
                     ],
                     [
-                        "Behavior"
+                        "Audio",
+                        "VO",
+                        "SS_Intro_1"
                     ],
                     [
-                        "Icons"
+                        "Audio",
+                        "VO",
+                        "SS_Running_"
+                    ],
+                    [
+                        "Audio",
+                        "VO",
+                        "SS_Sprint"
+                    ],
+                    [
+                        "Audio",
+                        "VO",
+                        "SS_Squats_"
+                    ],
+                    [
+                        "Audio",
+                        "VO",
+                        "SS_StrengthTraining"
+                    ],
+                    [
+                        "Audio",
+                        "VO",
+                        "SS_Yoga"
+                    ],
+                    [
+                        "Behavior"
                     ],
                     [
                         "Icons",
@@ -697,6 +729,16 @@
                     ],
                     [
                         "Scripts",
+                        "Blaire",
+                        "PlaneTracker"
+                    ],
+                    [
+                        "Scripts",
+                        "Blaire",
+                        "Squats"
+                    ],
+                    [
+                        "Scripts",
                         "Follower"
                     ],
                     [
@@ -710,6 +752,10 @@
                     [
                         "Scripts",
                         "ObjectsLayout"
+                    ],
+                    [
+                        "Scripts",
+                        "Path"
                     ],
                     [
                         "Scripts",
@@ -759,11 +805,12 @@
                         "TouchpadInput"
                     ],
                     [
-                        "Textures"
+                        "Textures",
+                        "Base"
                     ],
                     [
                         "Textures",
-                        "Base"
+                        "CircleOutline"
                     ],
                     [
                         "Textures",
@@ -884,12 +931,8 @@
                     "1648264952816580:28115",
                     "1648264952820910:28117",
                     "1648265711051372:68315",
-                    "1648265711053157:68335",
-                    "1648265711057332:68351",
-                    "1648265711061997:68367",
-                    "1648265711068563:68383",
-                    "1648265711077608:68399",
-                    "1648265711083978:68415"
+                    "1648265711052513:68333",
+                    "1648301218567384:130447"
                 ]
             ],
             "selectionSetList": ""
@@ -954,7 +997,7 @@
             "foldedOwnerSceneObjects": ""
         },
         "Material::UiComponent": {
-            "active_graph_asset": "1648302832932060:189263"
+            "active_graph_asset": "-1:-1"
         },
         "Script::UiComponent": {
             "active_graph_asset": "-1:-1"
@@ -1933,6 +1976,78 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "331",
+                    "uid": "1648315934953943:259999",
+                    "name": "Files\/File463.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "332",
+                    "uid": "1648315964492203:264846",
+                    "name": "Files\/File464.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "333",
+                    "uid": "1648317358518270:364065",
+                    "name": "Files\/File465.mp3",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "334",
+                    "uid": "1648317358566005:364074",
+                    "name": "Files\/File466.mp3",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "335",
+                    "uid": "1648317358609896:364083",
+                    "name": "Files\/File467.mp3",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "336",
+                    "uid": "1648317358647598:364096",
+                    "name": "Files\/File468.mp3",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "337",
+                    "uid": "1648317358723307:366482",
+                    "name": "Files\/File469.mp3",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "338",
+                    "uid": "1648317358791477:366500",
+                    "name": "Files\/File470.mp3",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "339",
+                    "uid": "1648317398902635:368946",
+                    "name": "Files\/File471.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -2049,7 +2164,18 @@
                 "90": "1648303785805348:249031",
                 "91": "1648307193060902:454108",
                 "92": "1648307208898252:461747",
-                "93": "1648307215053862:469529"
+                "93": "1648307215053862:469529",
+                "94": "1648311699037321:73973",
+                "95": "1648311699038195:73975",
+                "96": "1648315698387292:254394",
+                "97": "1648315983526157:271376",
+                "98": "1648316101511739:273844",
+                "99": "1648316264125959:286395",
+                "100": "1648316437115762:289304",
+                "101": "1648316602717608:306653",
+                "102": "1648316867616391:320225",
+                "103": "1648317123085912:346670",
+                "104": "1648317672815875:383778"
             }
         },
         "LayerComponent": {
@@ -3131,6 +3257,54 @@
                 {
                     "k": "462",
                     "v": "Files\/File462.lsmat"
+                },
+                {
+                    "k": "463",
+                    "v": "Files\/File463.js"
+                },
+                {
+                    "k": "464",
+                    "v": "Files\/File464.js"
+                },
+                {
+                    "k": "465",
+                    "v": "Files\/File465.mp3"
+                },
+                {
+                    "k": "466",
+                    "v": "Files\/File466.mp3"
+                },
+                {
+                    "k": "467",
+                    "v": "Files\/File467.mp3"
+                },
+                {
+                    "k": "468",
+                    "v": "Files\/File468.mp3"
+                },
+                {
+                    "k": "469",
+                    "v": "Files\/File469.mp3"
+                },
+                {
+                    "k": "470",
+                    "v": "Files\/File470.mp3"
+                },
+                {
+                    "k": "471",
+                    "v": "Files\/File471.pvr"
+                },
+                {
+                    "k": "472",
+                    "v": "Files\/File472.png"
+                },
+                {
+                    "k": "473",
+                    "v": "Files\/File473.png"
+                },
+                {
+                    "k": "474",
+                    "v": "Files\/File474.pvr"
                 }
             ]
         },
@@ -3624,11 +3798,11 @@
                     },
                     {
                         "k": "28717",
-                        "v": "Audio\/StartupSound.mp3"
+                        "v": "Audio\/SFX\/StartupSound.mp3"
                     },
                     {
                         "k": "28718",
-                        "v": "Audio\/SelectMode.mp3"
+                        "v": "Audio\/SFX\/SelectMode.mp3"
                     },
                     {
                         "k": "28719",
@@ -3672,11 +3846,11 @@
                     },
                     {
                         "k": "28732",
-                        "v": "Audio\/ReturnSound.mp3"
+                        "v": "Audio\/SFX\/ReturnSound.mp3"
                     },
                     {
                         "k": "28734",
-                        "v": "Audio\/SFX_Swipe.mp3"
+                        "v": "Audio\/SFX\/SFX_Swipe.mp3"
                     },
                     {
                         "k": "28735",
@@ -3705,6 +3879,54 @@
                     {
                         "k": "28741",
                         "v": "Materials\/ImageMat_Yoga.lsmat"
+                    },
+                    {
+                        "k": "28742",
+                        "v": "Scripts\/Blaire"
+                    },
+                    {
+                        "k": "28743",
+                        "v": "Scripts\/Blaire\/Squats.js"
+                    },
+                    {
+                        "k": "28744",
+                        "v": "Scripts\/Blaire\/PlaneTracker.js"
+                    },
+                    {
+                        "k": "28745",
+                        "v": "Audio\/SFX"
+                    },
+                    {
+                        "k": "28746",
+                        "v": "Audio\/VO"
+                    },
+                    {
+                        "k": "28747",
+                        "v": "Audio\/VO\/SS_Yoga.mp3"
+                    },
+                    {
+                        "k": "28748",
+                        "v": "Audio\/VO\/SS_StrengthTraining.mp3"
+                    },
+                    {
+                        "k": "28749",
+                        "v": "Audio\/VO\/SS_Squats_.mp3"
+                    },
+                    {
+                        "k": "28750",
+                        "v": "Audio\/VO\/SS_Sprint.mp3"
+                    },
+                    {
+                        "k": "28751",
+                        "v": "Audio\/VO\/SS_Running_.mp3"
+                    },
+                    {
+                        "k": "28752",
+                        "v": "Audio\/VO\/SS_Intro_1.mp3"
+                    },
+                    {
+                        "k": "28753",
+                        "v": "Textures\/CircleOutline.png"
                     }
                 ],
                 "hashes": [
@@ -3722,7 +3944,7 @@
                     },
                     {
                         "k": "6",
-                        "v": "f88ec115f8ede0b24a3b7cafb7e8ade8"
+                        "v": "fb5daec457f69d1566e5d8a6a1c5cd55"
                     },
                     {
                         "k": "7",
@@ -3738,7 +3960,7 @@
                     },
                     {
                         "k": "11",
-                        "v": "d3494bfc60e65e56c18bf062a75e7a7a"
+                        "v": "61cbe31f9278c25cc209679be915d2ba"
                     },
                     {
                         "k": "13",
@@ -4170,11 +4392,11 @@
                     },
                     {
                         "k": "26341",
-                        "v": "2cb36f29e207bfb0bb21b43f638acd24"
+                        "v": "057d3deb5e89b4ce8335053a0acd530a"
                     },
                     {
                         "k": "28681",
-                        "v": "b5726ecc96e5cbd8a6319344064f62f2"
+                        "v": "f8d447babc3f0f93e0b28473780b39fe"
                     },
                     {
                         "k": "28684",
@@ -4218,7 +4440,7 @@
                     },
                     {
                         "k": "28697",
-                        "v": "efc2d262c03defa57cd7d36bca018c82"
+                        "v": "cb30b8d4e7465d42cd5c549c6d08c2b2"
                     },
                     {
                         "k": "28698",
@@ -4274,7 +4496,7 @@
                     },
                     {
                         "k": "28715",
-                        "v": "50fc0d8bfdc38c42c7019186d7216739"
+                        "v": "586a5a53884ad57fe8ddfff649219346"
                     },
                     {
                         "k": "28717",
@@ -4306,7 +4528,7 @@
                     },
                     {
                         "k": "28725",
-                        "v": "8034881581cd59f39a3f8b0ab921a4fb"
+                        "v": "71352f09faf597438e37706ff921d437"
                     },
                     {
                         "k": "28726",
@@ -4326,11 +4548,11 @@
                     },
                     {
                         "k": "28730",
-                        "v": "b5fa5c44806a13f6a8604f6fb7c04903"
+                        "v": "ddaa07a94f8a8ff969ee670fbdc89ca0"
                     },
                     {
                         "k": "28731",
-                        "v": "a0c7afea6c5f214d0a3116f2c5684185"
+                        "v": "9e2894dbd4400cfabff4522bd26101c3"
                     },
                     {
                         "k": "28732",
@@ -4358,15 +4580,51 @@
                     },
                     {
                         "k": "28739",
-                        "v": "fffa19ba9be1600e7f75f1644cac21fa"
+                        "v": "adafddeb10643459daf0c4936775de33"
                     },
                     {
                         "k": "28740",
-                        "v": "f112d70747df076103f18f6749e397bf"
+                        "v": "99cdc00c5195f118640f1b98a0aedac0"
                     },
                     {
                         "k": "28741",
-                        "v": "c433263456d7a82d4a2d4244c6999dca"
+                        "v": "9ffdd0344860b394afd6fc47103dbb67"
+                    },
+                    {
+                        "k": "28743",
+                        "v": "b5c52fee23a027020bcbc0068e8599ae"
+                    },
+                    {
+                        "k": "28744",
+                        "v": "adb64daf9951cad00cffe913c679afa3"
+                    },
+                    {
+                        "k": "28747",
+                        "v": "e678ac7df4f157a1bfa2445a5ae60b55"
+                    },
+                    {
+                        "k": "28748",
+                        "v": "6d2cce5f54f4b0384c94701b8a4d9225"
+                    },
+                    {
+                        "k": "28749",
+                        "v": "ed943823db2d3116e2cbbb1b49f69108"
+                    },
+                    {
+                        "k": "28750",
+                        "v": "f66f3a28b50119ef21b1148bfac0429c"
+                    },
+                    {
+                        "k": "28751",
+                        "v": "a2d026493e225e8c4e0de243d54ed093"
+                    },
+                    {
+                        "k": "28752",
+                        "v": "cec1ced76e9df43f6c66a7b10d1cee19"
+                    },
+                    {
+                        "k": "28753",
+                        "v": "31f0c054bd4674d8a8350d88cf1b0a9e"
                     }
                 ],
                 "publicState": {
@@ -4374,7 +4632,7 @@
                         "isFolder": "true",
                         "lastModified": "2022-03-26T09:51:46",
                         "name": "Public",
-                        "hash": "43cc8e7eff0b1c04b53068676ab50a4c",
+                        "hash": "1929cfba0b3771784dc54da18f0a5b4f",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -4523,9 +4781,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-03-26T10:56:59",
+                                "lastModified": "2022-03-26T13:55:53",
                                 "name": "Audio",
-                                "hash": "59bb691b625bd0d3dc53c188db6100be",
+                                "hash": "27257042f439a45bef66cc1054909ccf",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -4535,32 +4793,104 @@
                                         "children": ""
                                     },
                                     {
-                                        "isFolder": "false",
-                                        "lastModified": "2022-03-26T03:31:46",
-                                        "name": "ReturnSound.mp3",
-                                        "hash": "943a8500e272c1dc6acc34f31d581cd8",
-                                        "children": ""
+                                        "isFolder": "true",
+                                        "lastModified": "2022-03-26T13:55:53",
+                                        "name": "SFX",
+                                        "hash": "59bb691b625bd0d3dc53c188db6100be",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T13:55:26",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T03:31:46",
+                                                "name": "ReturnSound.mp3",
+                                                "hash": "943a8500e272c1dc6acc34f31d581cd8",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-25T21:27:05",
+                                                "name": "SelectMode.mp3",
+                                                "hash": "b6f6e9ac1a2aa95128980f48214a8021",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T10:56:48",
+                                                "name": "SFX_Swipe.mp3",
+                                                "hash": "2ad3ea0b2d0f11994ab9b7a31042d5c2",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T00:02:43",
+                                                "name": "StartupSound.mp3",
+                                                "hash": "d630cf47c3a0c6084fe78422053dbe18",
+                                                "children": ""
+                                            }
+                                        ]
                                     },
                                     {
-                                        "isFolder": "false",
-                                        "lastModified": "2022-03-25T21:27:05",
-                                        "name": "SelectMode.mp3",
-                                        "hash": "b6f6e9ac1a2aa95128980f48214a8021",
-                                        "children": ""
-                                    },
-                                    {
-                                        "isFolder": "false",
-                                        "lastModified": "2022-03-26T10:56:48",
-                                        "name": "SFX_Swipe.mp3",
-                                        "hash": "2ad3ea0b2d0f11994ab9b7a31042d5c2",
-                                        "children": ""
-                                    },
-                                    {
-                                        "isFolder": "false",
-                                        "lastModified": "2022-03-26T00:02:43",
-                                        "name": "StartupSound.mp3",
-                                        "hash": "d630cf47c3a0c6084fe78422053dbe18",
-                                        "children": ""
+                                        "isFolder": "true",
+                                        "lastModified": "2022-03-26T13:55:58",
+                                        "name": "VO",
+                                        "hash": "3c875a163089a7122f6c91aa37fdebaf",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T13:55:35",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T13:54:38",
+                                                "name": "SS_Intro_1.mp3",
+                                                "hash": "cec1ced76e9df43f6c66a7b10d1cee19",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T13:54:43",
+                                                "name": "SS_Running_.mp3",
+                                                "hash": "a2d026493e225e8c4e0de243d54ed093",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T13:54:47",
+                                                "name": "SS_Sprint.mp3",
+                                                "hash": "f66f3a28b50119ef21b1148bfac0429c",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T13:54:50",
+                                                "name": "SS_Squats_.mp3",
+                                                "hash": "ed943823db2d3116e2cbbb1b49f69108",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T13:54:54",
+                                                "name": "SS_StrengthTraining.mp3",
+                                                "hash": "6d2cce5f54f4b0384c94701b8a4d9225",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T13:54:57",
+                                                "name": "SS_Yoga.mp3",
+                                                "hash": "e678ac7df4f157a1bfa2445a5ae60b55",
+                                                "children": ""
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -4659,15 +4989,15 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-03-26T11:24:09",
+                                "lastModified": "2022-03-26T13:54:07",
                                 "name": "Materials",
-                                "hash": "07be993582e9db80c5d0e0ecaea77a45",
+                                "hash": "24722aaa9d4aedbc61d280bf0a72cf35",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-03-26T11:24:08",
+                                        "lastModified": "2022-03-26T13:54:06",
                                         "name": "draw_path_material [DUPLICATE_ME].lsmat",
-                                        "hash": "e874890055a4659ad7277ad4ff2fe30a",
+                                        "hash": "aca510058fa4259b0898d73d76b6122c",
                                         "children": ""
                                     },
                                     {
@@ -4679,44 +5009,44 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-03-26T11:24:08",
+                                        "lastModified": "2022-03-26T13:54:06",
                                         "name": "ImageMat_Jump.lsmat",
-                                        "hash": "59de407933c061101d74d31cf6818045",
+                                        "hash": "9d571f942cb4a8c3eb6517aa0062cfd5",
                                         "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-03-26T11:24:09",
+                                        "lastModified": "2022-03-26T13:54:06",
                                         "name": "ImageMat_Run.lsmat",
-                                        "hash": "11d3fb32db0d8ee18f02eeb37df521c9",
+                                        "hash": "070888a29777783707360654b1bea94b",
                                         "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-03-26T11:24:09",
+                                        "lastModified": "2022-03-26T13:54:06",
                                         "name": "ImageMat_Sprints.lsmat",
-                                        "hash": "a6acbe4805cd454065a6fe1e1ed71688",
+                                        "hash": "e27904edf50557f788585ca9f0a74888",
                                         "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-03-26T11:24:09",
+                                        "lastModified": "2022-03-26T13:54:06",
                                         "name": "ImageMat_Squat.lsmat",
-                                        "hash": "42de5b5df279b5ad37feac98e5c4be40",
+                                        "hash": "a5762dd014d393cbd9790f93026a694c",
                                         "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-03-26T11:24:09",
+                                        "lastModified": "2022-03-26T13:54:06",
                                         "name": "ImageMat_Weights.lsmat",
-                                        "hash": "b892f0b3e4662ef3c489c4f6de9f9f41",
+                                        "hash": "3068a14577280324b4e9abc383f50f76",
                                         "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-03-26T11:24:09",
+                                        "lastModified": "2022-03-26T13:54:06",
                                         "name": "ImageMat_Yoga.lsmat",
-                                        "hash": "955877c1e87914733a2149b528ef66a7",
+                                        "hash": "0070ad1f7237e0ae901413c009f85798",
                                         "children": ""
                                     },
                                     {
@@ -5425,15 +5755,15 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-03-26T11:15:52",
+                                "lastModified": "2022-03-26T13:46:57",
                                 "name": "Scripts",
-                                "hash": "2bd77af44a2df6a352f64fdc7a4e4103",
+                                "hash": "5676d7f943b06c1450667ed8a9f772bf",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-03-26T11:15:52",
+                                        "lastModified": "2022-03-26T13:46:56",
                                         "name": "AppController.js",
-                                        "hash": "50fc0d8bfdc38c42c7019186d7216739",
+                                        "hash": "586a5a53884ad57fe8ddfff649219346",
                                         "children": ""
                                     },
                                     {
@@ -5442,6 +5772,35 @@
                                         "name": "BaseState.js",
                                         "hash": "81edb330b6168a400e1c39547c4e44d4",
                                         "children": ""
+                                    },
+                                    {
+                                        "isFolder": "true",
+                                        "lastModified": "2022-03-26T14:00:55",
+                                        "name": "Blaire",
+                                        "hash": "86793ccf6ef3788a5f6e13fc41aac8a4",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T13:32:06",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T13:32:32",
+                                                "name": "PlaneTracker.js",
+                                                "hash": "adb64daf9951cad00cffe913c679afa3",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-03-26T14:00:55",
+                                                "name": "Squats.js",
+                                                "hash": "b5c52fee23a027020bcbc0068e8599ae",
+                                                "children": ""
+                                            }
+                                        ]
                                     },
                                     {
                                         "isFolder": "false",
@@ -5480,15 +5839,15 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-03-26T09:42:33",
+                                        "lastModified": "2022-03-26T13:19:11",
                                         "name": "Path",
-                                        "hash": "59030e8b5121fa39206df1960c227ef9",
+                                        "hash": "536bd025cac30803092d45bfe93505bb",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-03-26T09:39:39",
+                                                "lastModified": "2022-03-26T12:57:29",
                                                 "name": "DrawPath.js",
-                                                "hash": "d3494bfc60e65e56c18bf062a75e7a7a",
+                                                "hash": "61cbe31f9278c25cc209679be915d2ba",
                                                 "children": ""
                                             },
                                             {
@@ -5507,9 +5866,9 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-03-26T09:42:33",
+                                                "lastModified": "2022-03-26T13:19:11",
                                                 "name": "PathDataManager.js",
-                                                "hash": "f88ec115f8ede0b24a3b7cafb7e8ade8",
+                                                "hash": "fb5daec457f69d1566e5d8a6a1c5cd55",
                                                 "children": ""
                                             },
                                             {
@@ -5521,9 +5880,9 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-03-26T09:41:32",
+                                                "lastModified": "2022-03-26T12:46:55",
                                                 "name": "UserPathCreator.js",
-                                                "hash": "b5726ecc96e5cbd8a6319344064f62f2",
+                                                "hash": "f8d447babc3f0f93e0b28473780b39fe",
                                                 "children": ""
                                             }
                                         ]
@@ -5579,24 +5938,31 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-03-26T04:12:19",
+                                        "lastModified": "2022-03-26T13:15:06",
                                         "name": "TouchpadInput.js",
-                                        "hash": "efc2d262c03defa57cd7d36bca018c82",
+                                        "hash": "cb30b8d4e7465d42cd5c549c6d08c2b2",
                                         "children": ""
                                     }
                                 ]
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-03-26T09:53:53",
+                                "lastModified": "2022-03-26T13:56:38",
                                 "name": "Textures",
-                                "hash": "2d316b8f5d6fe93f1615d6bf3448f17b",
+                                "hash": "1583de7773e32abe060b550d6ad0d512",
                                 "children": [
                                     {
                                         "isFolder": "false",
                                         "lastModified": "2022-03-24T10:48:15",
                                         "name": "Base.png",
                                         "hash": "d65ae0f6f49017f894bcb0d1ffa6df49",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-03-26T13:54:28",
+                                        "name": "CircleOutline.png",
+                                        "hash": "31f0c054bd4674d8a8350d88cf1b0a9e",
                                         "children": ""
                                     },
                                     {
@@ -5870,6 +6236,22 @@
                                 "additional": {
                                     "originHash": "54b5e21104a4a7f86b3d510596fdc27e",
                                     "subtype": "9"
+                                }
+                            },
+                            {
+                                "name": "CircleOutline",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "339",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1648317398902635:368946",
+                                "fileId": "471",
+                                "originalId": "472",
+                                "publicId": "28753",
+                                "source": "C:\/Users\/Aakas\/Downloads\/CircleOutline.png",
+                                "additional": {
+                                    "originHash": "31f0c054bd4674d8a8350d88cf1b0a9e"
                                 }
                             }
                         ]
@@ -6169,6 +6551,50 @@
                                 "publicId": "28719",
                                 "source": "C:\/Users\/Aakas\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiodLvOJPhsxfrp\/\/system\/\/emergencyFiles\/emergencyJs.js",
                                 "additional": ""
+                            },
+                            {
+                                "name": "Blaire",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "28742",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "Squats",
+                                        "type": "4",
+                                        "subtype": "0",
+                                        "resourceId": "331",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648315934953943:259999",
+                                        "fileId": "463",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28743",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/Squats(1).js",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "PlaneTracker",
+                                        "type": "4",
+                                        "subtype": "0",
+                                        "resourceId": "332",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648315964492203:264846",
+                                        "fileId": "464",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28744",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/PlaneTracker.js",
+                                        "additional": ""
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -8096,60 +8522,176 @@
                         "additional": "",
                         "resources": [
                             {
-                                "name": "StartupSound",
-                                "type": "5",
-                                "subtype": "0",
-                                "resourceId": "308",
+                                "name": "SFX",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
                                 "dependency": "0",
                                 "hidden": "false",
-                                "uid": "1648278082245774:204642",
-                                "fileId": "401",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
                                 "originalId": "18446744073709551615",
-                                "publicId": "28717",
-                                "source": "C:\/Users\/Aakas\/Downloads\/SportsSpecs_SFX\/Running_GemCollect4.mp3",
-                                "additional": ""
+                                "publicId": "28745",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "StartupSound",
+                                        "type": "5",
+                                        "subtype": "0",
+                                        "resourceId": "308",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648278082245774:204642",
+                                        "fileId": "401",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28717",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/SportsSpecs_SFX\/Running_GemCollect4.mp3",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "SelectMode",
+                                        "type": "5",
+                                        "subtype": "0",
+                                        "resourceId": "309",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648278105065790:206819",
+                                        "fileId": "402",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28718",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/SportsSpecs_SFX\/Running_GemCollect3.mp3",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "ReturnSound",
+                                        "type": "5",
+                                        "subtype": "0",
+                                        "resourceId": "322",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648305859232241:396616",
+                                        "fileId": "442",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28732",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/SportsSpecs_SFX\/Squat_Up_2.mp3",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "SFX_Swipe",
+                                        "type": "5",
+                                        "subtype": "0",
+                                        "resourceId": "324",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648306619449360:430754",
+                                        "fileId": "444",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28734",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/SFX_Swipe.mp3",
+                                        "additional": ""
+                                    }
+                                ]
                             },
                             {
-                                "name": "SelectMode",
-                                "type": "5",
-                                "subtype": "0",
-                                "resourceId": "309",
+                                "name": "VO",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
                                 "dependency": "0",
                                 "hidden": "false",
-                                "uid": "1648278105065790:206819",
-                                "fileId": "402",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
                                 "originalId": "18446744073709551615",
-                                "publicId": "28718",
-                                "source": "C:\/Users\/Aakas\/Downloads\/SportsSpecs_SFX\/Running_GemCollect3.mp3",
-                                "additional": ""
-                            },
-                            {
-                                "name": "ReturnSound",
-                                "type": "5",
-                                "subtype": "0",
-                                "resourceId": "322",
-                                "dependency": "0",
-                                "hidden": "false",
-                                "uid": "1648305859232241:396616",
-                                "fileId": "442",
-                                "originalId": "18446744073709551615",
-                                "publicId": "28732",
-                                "source": "C:\/Users\/Aakas\/Downloads\/SportsSpecs_SFX\/Squat_Up_2.mp3",
-                                "additional": ""
-                            },
-                            {
-                                "name": "SFX_Swipe",
-                                "type": "5",
-                                "subtype": "0",
-                                "resourceId": "324",
-                                "dependency": "0",
-                                "hidden": "false",
-                                "uid": "1648306619449360:430754",
-                                "fileId": "444",
-                                "originalId": "18446744073709551615",
-                                "publicId": "28734",
-                                "source": "C:\/Users\/Aakas\/Downloads\/SFX_Swipe.mp3",
-                                "additional": ""
+                                "publicId": "28746",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "SS_Yoga",
+                                        "type": "5",
+                                        "subtype": "0",
+                                        "resourceId": "333",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648317358518270:364065",
+                                        "fileId": "465",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28747",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/SS_Yoga.mp3",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "SS_StrengthTraining",
+                                        "type": "5",
+                                        "subtype": "0",
+                                        "resourceId": "334",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648317358566005:364074",
+                                        "fileId": "466",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28748",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/SS_StrengthTraining.mp3",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "SS_Squats_",
+                                        "type": "5",
+                                        "subtype": "0",
+                                        "resourceId": "335",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648317358609896:364083",
+                                        "fileId": "467",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28749",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/SS_Squats_.mp3",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "SS_Sprint",
+                                        "type": "5",
+                                        "subtype": "0",
+                                        "resourceId": "336",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648317358647598:364096",
+                                        "fileId": "468",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28750",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/SS_Sprint.mp3",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "SS_Running_",
+                                        "type": "5",
+                                        "subtype": "0",
+                                        "resourceId": "337",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648317358723307:366482",
+                                        "fileId": "469",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28751",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/SS_Running_.mp3",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "SS_Intro_1",
+                                        "type": "5",
+                                        "subtype": "0",
+                                        "resourceId": "338",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1648317358791477:366500",
+                                        "fileId": "470",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "28752",
+                                        "source": "C:\/Users\/Aakas\/Downloads\/SS_Intro_1.mp3",
+                                        "additional": ""
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -10318,6 +10860,34 @@
                                     "settings_hash": "2049"
                                 },
                                 "v": "456"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1648317398902635:368946",
+                    "v": {
+                        "infos": {
+                            "originalSize": "13757",
+                            "compressedSize": "7952",
+                            "originalRAM": "1048576",
+                            "compressedRAM": "131072",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "473",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "31f0c054bd4674d8a8350d88cf1b0a9e",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "474"
                             }
                         ]
                     }

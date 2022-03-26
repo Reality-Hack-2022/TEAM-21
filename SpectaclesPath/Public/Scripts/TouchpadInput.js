@@ -60,9 +60,13 @@ script.createEvent("TouchEndEvent").bind(function (eventData) {
             global.appController.onSwipeUp();
             return;
         }
+        else
+        {
+            print("[---] On Tap");
+            script.tapEvent = true;
+            global.appController.onTap();
+        }
     }
     
-    script.tapEvent = true;
-    global.appController.onTap();
-    print("[---] Tapped, time: " + duration.toFixed(2) + " // distance: " + delta.x.toFixed(2));
+    print("[---] time: " + duration.toFixed(2) + " // distance: " + delta.x.toFixed(2));
 });

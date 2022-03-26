@@ -54,6 +54,7 @@ builder.indexType = MeshIndexType.UInt16;
 script.activate = function() {
     setPathData();
     createMesh();
+    print("Drawing Path");
 }
 
 function setPathData() {

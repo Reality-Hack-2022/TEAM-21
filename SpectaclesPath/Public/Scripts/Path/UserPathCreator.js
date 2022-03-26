@@ -4,11 +4,12 @@
 
 global.userPathCreator = script;
 var store = global.persistentStorageSystem.store;
-//var pathKey = "lastPath";
 var posKey = "posArray";
 var rotKey = "rotArray";
 var pathPosData = [];
 var pathRotData = [];
+
+script.newPathMode = false;
 
 script.activate = function()
 {
@@ -31,21 +32,21 @@ script.activate = function()
     }
 }
 
-script.createEvent("TouchStartEvent").bind(function()
-{
-    getAndStorePathData();
-});
+//script.createEvent("TouchStartEvent").bind(function()
+//{
+//    getAndStorePathData();
+//});
+//
+//script.createEvent("TouchEndEvent").bind(function()
+//{
+//    //print("A touch hath ended");
+//});
 
-script.createEvent("TouchEndEvent").bind(function()
-{
-    //print("A touch hath ended");
-});
-
-function getAndStorePathData()
+script.getAndStorePathData = function()
 {
     addDataToPath(getDevicePos(), getDeviceRot());
-    //print("Adding position: " + pos.toString());
     storePathData(pathPosData, pathRotData);
+    print("Storing Transform");
 }
 
 function addDataToPath(pos, rot)
@@ -72,14 +73,10 @@ function getDeviceRot() { return script.camera.getTransform().getWorldRotation()
 
 function encapsulateData(pos, rot)
 {
-    var t = 
-    {
-        "position": pos,
-        "rotation": rot,
-    };
+    var t = { "position": pos, "rotation": rot, };
     return t;
 }
-script.api.retrieveEncapsulatedData = function()
+script.retrieveEncapsulatedData = function()
 {
     //print("Encapsulating Data called");
     var posData = retrievePathPosData();
@@ -101,4 +98,11 @@ script.api.retrieveEncapsulatedData = function()
     }
     
     return pathData;
+}
+script.clearPathData = function()
+{
+    var v3d = [];
+    var qd = [];
+    store.putVec3Array(posKey, v3d);
+    store.putQuatArray(rotKey, qd);
 }

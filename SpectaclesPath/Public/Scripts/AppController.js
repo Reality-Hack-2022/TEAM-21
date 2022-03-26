@@ -17,6 +17,7 @@
 //@ui {"widget":"group_end"}
 
 //@ui {"widget":"group_start", "label":"Path Drawing"}
+// @input SceneObject pathStuff
 // @input Component.ScriptComponent drawPath
 // @input Component.ScriptComponent userPathCreator
 // @input Component.ScriptComponent pathDataManager
@@ -26,18 +27,18 @@
 global.appController = script;
 
 script.menuOpen = true;
-script.menuIndex;
+script.menuIndex = 1;
+script.newPathMode = false;
 
 
 script.createEvent("OnStartEvent").bind(function()
 {
+    global.planeTracker.start();
     script.audio.audioTrack = script.startupSound;
     script.audio.play(0);
 });
 
 
-script.onSwipeForward = function() { }
-script.onSwipeBackward = function() { }
 script.onSwipeUp = function()
 {
     var curPos = script.carousel.getTransform().getLocalPosition();
@@ -55,12 +56,28 @@ script.onSwipeUp = function()
 }
 script.onSwipeDown = function()
 {
-    var curPos = script.carousel.getTransform().getLocalPosition();
-    global.tweenManager.stopTween(script.carousel, "menuMove");
-    global.tweenManager.setStartValue(script.carousel, "menuMove", curPos);
-    global.tweenManager.setEndValue(script.carousel, "menuMove", script.closedMenuPos);
-    global.tweenManager.startTween(script.carousel, "menuMove", moveComplete, moveStart, moveStop);
-    script.menuOpen = false;
+//    var curPos = script.carousel.getTransform().getLocalPosition();
+//    global.tweenManager.stopTween(script.carousel, "menuMove");
+//    global.tweenManager.setStartValue(script.carousel, "menuMove", curPos);
+//    global.tweenManager.setEndValue(script.carousel, "menuMove", script.closedMenuPos);
+//    global.tweenManager.startTween(script.carousel, "menuMove", moveComplete, moveStart, moveStop);
+//    script.menuOpen = false;
+}
+script.onSwipeForward = function() 
+{
+    if (script.newPathMode)
+    {
+        global.userPathCreator.getAndStorePathData();
+        script.audio.audioTrack = script.menuSwiped;
+        script.audio.play(0);
+    }
+}
+script.onSwipeBackward = function()
+{
+    if (script.newPathMode)
+    {
+        script.endNewPathMode();
+    }
 }
 
 function moveStart()  {
@@ -85,9 +102,11 @@ script.onTap = function()
 
 script.exitCurrent = function()
 {
+    print("Exiting Current");
     script.audio.audioTrack = script.returnToMenuSound;
     script.audio.play(0);
-    print("Exiting Current");
+    
+    script.stopRunningExperience();
 }
 
 script.setHighlighted = function(index)
@@ -117,6 +136,9 @@ script.setHighlighted = function(index)
             case 5:
                 script.menuLabel.text = "Comming Soon: Sprints";
                 break;
+            case 6:
+                script.menuLabel.text = "Set new path";
+                break;
         }
     }
     
@@ -132,25 +154,30 @@ script.selectMenuItem = function()
     switch (script.menuIndex)
     {
         case 0:
-            print("was 0");
+            print("selected Jump");
             break;
         case 1:
-            print("Was 1");
+            print("selected Run");
+            script.startRunningExperience();
             break;
         case 2:
-            print("was 2");
+            print("selected Squat");
             break;
         case 3:
-            print("was 3");
+            print("selected Yoga");
             break;
         case 4:
-            print("was 4");
+            print("selected Weights");
             break;
         case 5:
-            print("was 5");
+            print("selected Sprint");
+            break;
+        case 6:
+            script.createNewRunningPath();
+            print("selected NewPath");
             break;
     }
-    print("Menu Item " + script.menuIndex + " selected");
+    //print("Menu Item " + script.menuIndex + " selected");
 }
 script.hideMenu = function()
 {
@@ -160,19 +187,35 @@ script.hideMenu = function()
 
 script.createNewRunningPath = function()
 {
-    script.userPathCreator.enabled = true;
+    //script.userPathCreator.enabled = true;
+    global.userPathCreator.clearPathData();
+    script.newPathMode = true;
+    print("Create new running path");
+}
+script.endNewPathMode = function()
+{
+    script.newPathMode = false;
+    script.onSwipeUp(); //returns back to menu
+    print("End creating new running path");
 }
 script.loadLastRunningPath = function()
 {
-    
+    global.drawPath.activate();
 }
 script.startRunningExperience = function()
 {
-    global.placeObjectsOnPath.enabled = true;
+    //global.globalPathDataManager.activate();
+    global.globalPathDataManager.loadCachedPath();
+    global.drawPath.enabled = true;
+    global.drawPath.activate();
+    script.placeObjectsOnPath.enabled = true;
+    print("Starting running Experience");
 }
 script.stopRunningExperience = function()
 {
-    global.placeObjectsOnPath.enabled = false;
+    global.drawPath.enabled = false;
+    script.placeObjectsOnPath.enabled = false;
+    print("Ending running Experience");
 }
 script.startSquatsExperience = function()
 {
